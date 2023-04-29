@@ -11,6 +11,3 @@ rm poetry.lock
 poetry lock
 
 python -m poetry install
-
-/opt/render/project/src/.venv/bin/python manage.py collectstatic --no-input
-/opt/render/project/src/.venv/bin/python manage.py migrate
