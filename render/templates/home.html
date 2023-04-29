@@ -1,0 +1,237 @@
+{% load static %}
+<html lang="en">
+<head>
+  <title>VideoSnap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <title>SB Admin 2 - Cards</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+	  href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+	  rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<style>
+
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #dedede;
+
+}
+
+form {
+  text-align: center;
+}
+
+
+
+p {
+  color: navy;
+  text-indent: 100px;
+  font-size:20px; 
+
+}
+
+label {
+  font-size:18px;
+  text-align: right;
+
+}
+
+
+.circle-wrap {
+  margin: 150px auto;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+  top: -120px;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+table {
+  width: 100%;
+  border: 1px solid purple;
+}
+
+th, td {
+  text-align: left;
+  padding: 1px;
+}
+
+img {
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: contain;
+	position: relative; 
+	top: -70px;
+}
+
+table.GeneratedTable {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    color: #000000;
+  }
+  
+  table.GeneratedTable td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    padding: 3px;
+  }
+  
+  table.GeneratedTable thead {
+    background-color: #00ff62;
+  }
+
+</style>
+
+
+
+<div class = "container-fluid" >
+ 
+  <div class="row">
+  
+	<span>    
+	<div class="col-sm-6">
+		<ul class="nav navbar-light pull-left">
+                <a href=""><h3>SummarizeVideo - Powered by MindsDB</h3></a>
+            </ul>
+	</div>
+	</span>
+	<span>   
+	<div class="col-sm-6">
+	<img style="width:40%;top:0px;float:right;right:-20px" src= "https://i.ibb.co/hL42XW0/634aea6929d4e1802257ff90-prev-p-500.png" class="img-responsive img" align= "right">
+    </div>
+	</span>
+     
+	</div>
+	</div>
+
+	<nav class="navbar navbar-default">
+    <div class="container-fluid" style="background: #012424">
+   	<ul role="tablist" class="nav nav-tabs sn-tabs-basic" >
+	    <li role="presentation" class="enabled"> 
+		<a id="tablabel1" aria-controls="tab1" tabindex="0" role="tab" class="active" data-toggle="tab" aria-selected="true" href="#tab1 "style="color:#00b090;font-weight: bold; font-size:18px;">SummarizeVideo</a>
+		</li>
+        <li role="presentation" class="enabled"> 
+                <a id="tablabel2" aria-controls="tab2" tabindex="0" role="tab" data-toggle="tab" href="#tab2" aria-selected="false" style="color:#00b090;font-weight: bold; font-size:18px;">About the Project</a>
+        </li>
+        <li role="presentation" class="enabled"> 
+            <a id="tablabel3" aria-controls="tab3" tabindex="0" role="tab" data-toggle="tab" href="#tab3" aria-selected="false" style="color:#00b090;font-weight: bold; font-size:18px;">Demo</a>
+    </li>
+	</ul>
+	</div>
+    </nav>
+
+    <div class="tab-content">
+      <div id="tab1" aria-hidden="false" role="tabpanel" class="tab-pane active" aria-labelledby="tablabel1"> 
+      <h3 style="color: rgb(0, 4, 238)"> <center> <u> SummarizeVideo - Youtube Video Summarizer </u> <center> </h3>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-6" style="left: 400px;">
+    
+            <form method="post" class="post-form" style="float:center;" action="{% url 'yt_show' %}">
+              {% csrf_token %}
+                <label for="textarea-1668135577801" class="formbuilder-textarea-label" >Enter the Youtube Video URL </label>
+                <input type="url" id="fname" name="yt_url"  size="50"> 
+                <br>
+                <br>
+                <input type="submit" id = "btnSave" onclick="showDiv()" class="btn btn-success" value="Submit">
+              
+            </form>
+    
+    
+        </div>
+        </div>
+
+
+        
+    </div>
+	
+
+
+    <div id="tab2" aria-hidden="false" role="tabpanel" class="tab-pane" aria-labelledby="tablabel2"> 
+    
+    </div> 
+	
+
+    <div id="tab3" aria-hidden="false" role="tabpanel" class="tab-pane" aria-labelledby="tablabel3"> 
+      
+        </div> 
+</div>
+
+</body>
+</html>
