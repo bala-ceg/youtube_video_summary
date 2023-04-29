@@ -14,4 +14,5 @@ poetry lock
 
 python -m poetry install
 
+python ./www/manage.py collectstatic --no-input
 python manage.py migrate
