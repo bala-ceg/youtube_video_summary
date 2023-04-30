@@ -16,6 +16,7 @@ It will take a few seconds to summarize the given youtube video & generate summa
 If the video has been summarized already once, it will generate summary immediately.
 
 ## Demo
+![p1_hash](https://user-images.githubusercontent.com/70808619/235337027-daab8dbe-115f-445f-8e51-9e1513f34b84.gif)
 
 
 ## Tech Specs
