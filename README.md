@@ -1,3 +1,8 @@
+
+![P1](https://user-images.githubusercontent.com/70808619/235335378-c4076a7e-4bb2-4001-a819-bad035c49a0f.png)
+
+
+
 # YouTube Video Summary Project
 
 This project utilizes MindsDB to generate summaries for YouTube videos. The goal of this project is to automate the process of summarizing YouTube videos for better accessibility and to save time for viewers who are looking to get a quick overview of a video's content.
